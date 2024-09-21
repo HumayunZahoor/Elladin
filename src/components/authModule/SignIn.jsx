@@ -51,12 +51,12 @@ const SignIn = () => {
         <div className="flex justify-between items-center w-full mb-8 px-4 md:px-20">
           <div className="flex items-center">
             <GiMagicLamp className="text-[#F37222] h-10 w-10 mr-2 p-1 rounded-full bg-opacity-5" />
-            <span className="text-white font-semibold text-lg">Eladdin AI</span>
+            <span className="text-white font-semibold ">Eladdin AI</span>
           </div>
           <div className="flex items-center justify-center border-2 border-white border-opacity-5 rounded-full p-2">
             <Link to="/" className="text-white mr-2 flex items-center">
               Create Account
-              <FaSignInAlt className="text-white h-6 w-8 p-1 rounded-full" />
+              <FaSignInAlt className="text-white h-6 w-6 p-1 rounded-full" />
             </Link>
           </div>
         </div>
