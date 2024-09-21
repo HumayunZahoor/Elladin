@@ -1,0 +1,40 @@
+.slick-dots {
+  display: flex !important;
+  justify-content: center;
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.slick-dots li {
+  margin: 0 5px;
+}
+
+.slick-dots li button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: transparent;
+  border: 2px solid white;
+  transition: background 0.3s ease;
+}
+
+.slick-dots li.slick-active button {
+  background: white;
+}
+
+.slick-dots li button:before {
+  display: none;
+}
+
+.slider-container {
+  overflow: hidden;
+}
+
+.slick-slide {
+  display: flex;
+  justify-content: center;
+}
