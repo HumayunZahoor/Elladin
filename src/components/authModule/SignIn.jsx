@@ -61,7 +61,7 @@ const SignIn = () => {
           </div>
         </div>
 
-        <h1 className="text-3xl font-semibold text-white mb-10 text-center">Sign In</h1>
+        <h1 className="text-2xl font-semibold text-white mb-10 text-center">Sign In</h1>
 
         <button className="text-white p-1 rounded-full mb-4 flex items-center justify-center border-2 border-white border-opacity-5 w-4/5 md:w-3/5">
           <FcGoogle className="mr-2 h-6 w-6" /> Continue with Google

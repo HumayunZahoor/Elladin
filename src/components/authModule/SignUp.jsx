@@ -48,7 +48,7 @@ const SignUp = () => {
       </div>
 
       <div className="w-full md:w-1/2 h-screen flex flex-col justify-center items-center bg-custom-gray relative z-10 px-4 md:px-8">
-        <div className="flex justify-between items-center w-full mb-8 px-4 md:px-20">
+        <div className="flex justify-between items-center w-full mb-4 px-4 md:px-20 mt-24">
           <div className="flex items-center">
             <GiMagicLamp className="text-[#F37222] h-10 w-10 mr-2 p-1 rounded-full bg-opacity-5" />
             <span className="text-white font-semibold text-lg">Eladdin AI</span>
@@ -61,8 +61,8 @@ const SignUp = () => {
           </div>
         </div>
 
-        <h1 className="text-3xl font-semibold text-white mb-2 text-center">Welcome to Eladdin</h1>
-        <h1 className="text-3xl font-semibold mb-6 text-white text-center">AI Agent</h1>
+        <h1 className="text-2xl font-semibold text-white mb-2 text-center">Welcome to Eladdin</h1>
+        <h1 className="text-2xl font-semibold mb-4 text-white text-center">AI Agent</h1>
 
         <button className="text-white p-1 rounded-full mb-4 flex items-center justify-center border-2 border-white border-opacity-5 w-4/5 md:w-3/5">
           <FcGoogle className="mr-2 h-6 w-6" /> Continue with Google
@@ -77,7 +77,7 @@ const SignUp = () => {
       
         <form className="w-4/5 md:w-3/5 mb-4">
           <div className="mb-4">
-            <label className="text-white mb-2 block" htmlFor="username">User Name</label>
+            <label className="text-white mb-1 block" htmlFor="username">User Name</label>
             <div className="relative">
               <FaUser className="absolute top-1/2 transform -translate-y-1/2 left-3 text-gray-400" />
               <input
@@ -90,7 +90,7 @@ const SignUp = () => {
           </div>
 
           <div className="mb-4">
-            <label className="text-white mb-2 block" htmlFor="email">E-mail</label>
+            <label className="text-white mb-1 block" htmlFor="email">E-mail</label>
             <div className="relative">
               <FaEnvelope className="absolute top-1/2 transform -translate-y-1/2 left-3 text-gray-400" />
               <input
@@ -103,7 +103,7 @@ const SignUp = () => {
           </div>
 
           <div className="mb-4">
-            <label className="text-white mb-2 block" htmlFor="password">Password</label>
+            <label className="text-white mb-1 block" htmlFor="password">Password</label>
             <div className="relative">
               <FaLock className="absolute top-1/4 transform -translate-y-1/2 left-3 text-gray-400" />
               <input
@@ -118,14 +118,14 @@ const SignUp = () => {
               >
                {showPassword ? <FaEyeSlash /> : <FaEye />}
               </span>
-              <p className='text-white text-opacity-10 mt-2 mb-3'>At least 8 characters</p>
+              <p className='text-white text-opacity-10 mt-2 mb-2'>At least 8 characters</p>
             </div>
           </div>
 
           <button type="submit" className="bg-[#F37222] text-white p-1 rounded-full w-full">Join Eladdin</button>
         </form>
 
-        <div className="mt-4 w-4/5 md:w-3/5 text-gray-500 text-center">
+        <div className="mt-1 w-4/5 md:w-3/5 text-gray-500 text-center mb-16">
           <Link to="/terms" className="text-sm">By creating an account, you agree to our Terms of Service and Privacy & Cookie Statement.</Link>
         </div>
       </div>
