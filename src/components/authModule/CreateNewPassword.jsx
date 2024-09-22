@@ -35,7 +35,7 @@ const CreateNewPassword = () => {
                 className="p-2 pl-10 border border-gray-500 rounded-full w-full bg-[#3A3A3A] text-white placeholder-gray-400"
               />
               <span
-               className="absolute top-1/2 transform -translate-y-1/2 right-3 cursor-pointer text-gray-400"
+               className="absolute top-1/2 transform -translate-y-1/2 right-3 ml-2 cursor-pointer text-gray-400"
                onClick={togglePasswordVisibility}
               >
                {showPassword ? <FaEyeSlash /> : <FaEye />}
@@ -51,7 +51,7 @@ const CreateNewPassword = () => {
                 className="p-2 pl-10 border border-gray-500 rounded-full w-full bg-[#3A3A3A] text-white placeholder-gray-400"
               />
               <span
-               className="absolute top-1/2 transform -translate-y-1/2 right-3 cursor-pointer text-gray-400"
+               className="absolute top-1/2 transform -translate-y-1/2 right-3 ml-2 cursor-pointer text-gray-400"
                onClick={togglePasswordVisibility}
               >
                {showPassword ? <FaEyeSlash /> : <FaEye />}
