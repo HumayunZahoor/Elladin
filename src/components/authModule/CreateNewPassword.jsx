@@ -27,36 +27,38 @@ const CreateNewPassword = () => {
           <div className="w-full mb-4 flex flex-col items-center">
             <label className="text-white mb-2 ml-3 w-3/5 md:w-2/5" htmlFor="email">New Password</label>
             <div className="relative w-3/5 md:w-2/5 mb-4">
-              <FaLock className="absolute top-1/2 transform -translate-y-1/2 left-3 text-gray-400" />
-              <input
-                type={showPassword ? 'text' : 'password'}
-                id="password"
-                placeholder="Enter new Password"
-                className="p-2 pl-10 border border-gray-500 rounded-full w-full bg-[#3A3A3A] text-white placeholder-gray-400"
-              />
-              <span
-               className="absolute top-1/2 transform -translate-y-1/2 right-3 ml-2 cursor-pointer text-gray-400"
-               onClick={togglePasswordVisibility}
-              >
-               {showPassword ? <FaEyeSlash /> : <FaEye />}
-              </span>
-            </div>
+  <FaLock className="absolute top-1/2 transform -translate-y-1/2 left-3 text-gray-400" />
+  <input
+    type={showPassword ? 'text' : 'password'}
+    id="password"
+    placeholder="Enter new Password"
+    className="p-2 pl-10 pr-10 border border-gray-500 rounded-full w-full bg-[#3A3A3A] text-white placeholder-gray-400"
+  />
+  <span
+    className="absolute top-1/2 transform -translate-y-1/2 right-3 cursor-pointer text-gray-400"
+    onClick={togglePasswordVisibility}
+  >
+    {showPassword ? <FaEyeSlash /> : <FaEye />}
+  </span>
+</div>
+
             <label className="text-white mb-2 ml-3 w-3/5 md:w-2/5" htmlFor="email">Confirm Password</label>
             <div className="relative w-3/5 md:w-2/5 mb-4">
-              <FaLock className="absolute top-1/2 transform -translate-y-1/2 left-3 text-gray-400" />
-              <input
-                type={showPassword ? 'text' : 'password'}
-                id="password"
-                placeholder="Confirm your Password"
-                className="p-2 pl-10 border border-gray-500 rounded-full w-full bg-[#3A3A3A] text-white placeholder-gray-400"
-              />
-              <span
-               className="absolute top-1/2 transform -translate-y-1/2 right-3 ml-2 cursor-pointer text-gray-400"
-               onClick={togglePasswordVisibility}
-              >
-               {showPassword ? <FaEyeSlash /> : <FaEye />}
-              </span>
-            </div>
+  <FaLock className="absolute top-1/2 transform -translate-y-1/2 left-3 text-gray-400" />
+  <input
+    type={showPassword ? 'text' : 'password'}
+    id="password"
+    placeholder="Enter new Password"
+    className="p-2 pl-10 pr-10 border border-gray-500 rounded-full w-full bg-[#3A3A3A] text-white placeholder-gray-400"
+  />
+  <span
+    className="absolute top-1/2 transform -translate-y-1/2 right-3 cursor-pointer text-gray-400"
+    onClick={togglePasswordVisibility}
+  >
+    {showPassword ? <FaEyeSlash /> : <FaEye />}
+  </span>
+</div>
+
           </div>
           <div className="w-full flex justify-center">
             <button type="submit" className="bg-[#FC6C04] text-white p-2 rounded-full w-3/5 md:w-2/5">
