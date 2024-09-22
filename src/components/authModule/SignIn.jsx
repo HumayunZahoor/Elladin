@@ -53,7 +53,7 @@ const SignIn = () => {
             <GiMagicLamp className="text-[#F37222] h-10 w-10 mr-2 p-1 rounded-full bg-opacity-5" />
             <span className="text-white font-semibold ">Eladdin AI</span>
           </div>
-          <div className="flex items-center justify-center border-2 border-white border-opacity-5 rounded-full p-2">
+          <div className="flex items-center justify-center border-2 border-white border-opacity-5 rounded-full p-1">
             <Link to="/" className="text-white mr-2 flex items-center">
               Create Account
               <FaSignInAlt className="text-white h-6 w-6 p-1 rounded-full" />
