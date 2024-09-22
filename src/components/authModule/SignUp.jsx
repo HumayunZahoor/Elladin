@@ -61,8 +61,8 @@ const SignUp = () => {
           </div>
         </div>
 
-        <h1 className="text-2xl font-semibold text-white mb-2 text-center">Welcome to Eladdin</h1>
-        <h1 className="text-2xl font-semibold mb-4 text-white text-center">AI Agent</h1>
+        <h1 className="text-2xl font-semibold text-white mb-1 text-center">Welcome to Eladdin</h1>
+        <h1 className="text-2xl font-semibold mb-2 text-white text-center">AI Agent</h1>
 
         <button className="text-white p-1 rounded-full mb-4 flex items-center justify-center border-2 border-white border-opacity-5 w-4/5 md:w-3/5">
           <FcGoogle className="mr-2 h-6 w-6" /> Continue with Google
