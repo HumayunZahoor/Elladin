@@ -1,8 +1,14 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { GiMagicLamp } from "react-icons/gi";
 import { FaEnvelope } from 'react-icons/fa';
 
 const ForgotPassword = () => {
+  const navigate = useNavigate()
+  
+  const handleOnClick = () => {
+    navigate('/CreateNewPassword')
+  }
   return (
     <div className='flex flex-col w-full min-h-screen bg-custom-gray justify-center items-center relative'>
       
@@ -33,7 +39,9 @@ const ForgotPassword = () => {
             </div>
           </div>
           <div className="w-full flex justify-center">
-            <button type="submit" className="bg-[#FC6C04] text-white p-2 rounded-full w-3/5 md:w-2/5">
+            <button type="submit" className="bg-[#FC6C04] text-white p-2 rounded-full w-3/5 md:w-2/5"
+            onClick={handleOnClick}
+            >
               Continue
             </button>
           </div>
