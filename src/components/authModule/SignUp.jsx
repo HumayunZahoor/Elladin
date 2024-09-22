@@ -50,7 +50,7 @@ const SignUp = () => {
       <div className="w-full md:w-1/2 h-screen flex flex-col justify-center items-center bg-custom-gray relative z-10 px-4 md:px-8">
         <div className="flex justify-between items-center w-full mb-4 px-4 md:px-20 mt-24">
           <div className="flex items-center">
-            <GiMagicLamp className="text-[#F37222] h-10 w-10 mr-2 p-1 rounded-full bg-opacity-5" />
+            <GiMagicLamp className="text-[#FC6C04] h-10 w-10 mr-2 p-1 rounded-full bg-opacity-5" />
             <span className="text-white font-bold">Eladdin AI</span>
           </div>
           <div className="flex items-center justify-center border-2 border-white border-opacity-5 rounded-full p-1">
@@ -122,7 +122,7 @@ const SignUp = () => {
             </div>
           </div>
 
-          <button type="submit" className="bg-[#F37222] text-white p-1 rounded-full w-full">Join Eladdin</button>
+          <button type="submit" className="bg-[#FC6C04] text-white p-1 rounded-full w-full">Join Eladdin</button>
         </form>
 
         <div className=" w-4/5 md:w-3/5 text-gray-500 text-center mb-16">
