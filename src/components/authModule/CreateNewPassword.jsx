@@ -48,7 +48,7 @@ const CreateNewPassword = () => {
   <input
     type={showPassword ? 'text' : 'password'}
     id="password"
-    placeholder="Enter new Password"
+    placeholder="Confirm your Password"
     className="p-2 pl-10 pr-10 border border-gray-500 rounded-full w-full bg-[#3A3A3A] text-white placeholder-gray-400"
   />
   <span
