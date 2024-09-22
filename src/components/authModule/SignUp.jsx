@@ -118,14 +118,14 @@ const SignUp = () => {
               >
                {showPassword ? <FaEyeSlash /> : <FaEye />}
               </span>
-              <p className='text-white text-opacity-10 mt-2 mb-2'>At least 8 characters</p>
+              <p className='text-white text-opacity-10 mt-1 mb-2'>At least 8 characters</p>
             </div>
           </div>
 
           <button type="submit" className="bg-[#F37222] text-white p-1 rounded-full w-full">Join Eladdin</button>
         </form>
 
-        <div className="mt-1 w-4/5 md:w-3/5 text-gray-500 text-center mb-16">
+        <div className=" w-4/5 md:w-3/5 text-gray-500 text-center mb-16">
           <Link to="/terms" className="text-sm">By creating an account, you agree to our Terms of Service and Privacy & Cookie Statement.</Link>
         </div>
       </div>
