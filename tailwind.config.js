@@ -8,6 +8,8 @@ export default {
     extend: {
       colors: {
         'custom-gray': '#292D32',
+        'custom-orange': '#FC6C04',
+        'custom-grayli': '#929194',
       },
     },
   },

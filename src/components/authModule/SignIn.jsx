@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import { FaSignInAlt, FaEnvelope, FaLock , FaEye, FaEyeSlash} from 'react-icons/fa';
 import { FcGoogle } from "react-icons/fc";
 import { GiMagicLamp } from "react-icons/gi";
-import { Link } from 'react-router-dom';
+import { Link , useNavigate} from 'react-router-dom';
 import Slider from 'react-slick';
 import img1 from '../images/bg.png';
 import img2 from '../images/bg(1).png';
@@ -30,6 +30,12 @@ const SignIn = () => {
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
   };
+
+  const navigate = useNavigate()
+  
+  const handleOnClick = () => {
+    navigate('/Dashboard')
+  }
 
   return (
     <div className="flex flex-col md:flex-row w-full min-h-screen bg-custom-gray overflow-hidden">
@@ -108,11 +114,15 @@ const SignIn = () => {
             </div>
           </div>
 
-          <button type="submit" className="bg-[#FC6C04] text-white p-1 rounded-full w-full">Sign In</button>
+          <button type="submit" className="bg-[#FC6C04] text-white p-1 rounded-full w-full"
+          onClick={handleOnClick}
+          >
+          Sign In</button>
         </form>
 
         <div className="mt-4 w-4/5 md:w-3/5 text-gray-500 text-center">
-          <Link to="/terms" className="text-sm">By Sign in an account, you agree to our Terms of Service and Privacy & Cookie Statement.</Link>
+          <Link to="/terms" className="text-sm"
+          >By Sign in an account, you agree to our Terms of Service and Privacy & Cookie Statement.</Link>
         </div>
       </div>
 

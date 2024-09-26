@@ -4,6 +4,12 @@ import SignUp from "./components/authModule/SignUp";
 import SignIn from "./components/authModule/SignIn";
 import ForgotPassword from "./components/authModule/ForgotPassword";
 import CreateNewPassword from "./components/authModule/CreateNewPassword";
+import Dashboard from "./components/dashboard/Dashboard";
+import Menu from "./components/navigation/Menu";
+import Api from "./components/api/Api";
+import EBook from "./components/e-book/EBook";
+import CoverTemplates from "./components/covertemplates/CoverTemplates";
+import Payments from "./components/payments/Payments";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './index.css';
@@ -13,12 +19,18 @@ function App() {
   
   return (
     <Router>
-    {/* <Navbar/> */}
+    {/* <Menu/> */}
       <Routes>
       <Route path="/" exact element={<SignUp/>} />
       <Route path="/SignIn" exact element={<SignIn/>} />
       <Route path="/ForgotPassword" exact element={<ForgotPassword/>} />
       <Route path="/CreateNewPassword" exact element={<CreateNewPassword/>} />
+      <Route path="/Dashboard" exact element={<Dashboard/>} />
+      <Route path="/Menu" exact element={<Menu/>} />
+      <Route path="/EBook" exact element={<EBook/>} />
+      <Route path="/CoverTemplates" exact element={<CoverTemplates/>} />
+      <Route path="/Payments" exact element={<Payments/>} />
+      <Route path="/Api" exact element={<Api/>} />
       </Routes>
       <ToastContainer 
         position="top-right"
