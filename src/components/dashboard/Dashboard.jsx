@@ -124,8 +124,8 @@ const Dashboard = () => {
 
                                     {/* Icon Container */}
                                     <div className="relative m-4">
-                                        <div className="bg-[#FF6600] w-14 h-12 rounded-xl"></div> {/* Orange Icon Background */}
-                                        <div className="absolute left-2 bottom-0 w-10 h-10 bg-white rounded-t-2xl"></div> {/* White square */}
+                                        <div className="bg-[#FF6600] w-14 h-12 rounded-2xl"></div> {/* Orange Icon Background */}
+                                        <div className="absolute left-2 bottom-0 w-10 h-9 bg-white rounded-t-lg rounded-b-md"></div> {/* White square */}
                                     </div>
 
                                     {/* Title */}
