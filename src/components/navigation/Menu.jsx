@@ -31,7 +31,7 @@ const Menu = () => {
         <>
             {/* Menu button for small screens */}
             <button
-                className="lg:hidden fixed top-4 left-4 z-50 bg-[#FC6C04] p-2 rounded-full shadow-lg"
+                className="lg:hidden fixed top-4 left-4 z-50 bg-custom-orange p-2  rounded-full shadow-lg"
                 onClick={toggleMenu}
             >
                 <HiMenuAlt2 className="text-white text-2xl" />
@@ -61,7 +61,7 @@ const Menu = () => {
 
                 {/* Menu content */}
                 <div className="flex flex-col items-start">
-                    <div className="flex items-center justify-start mb-6 mt-6">
+                    <div className="flex items-center justify-start mb-6 mt-16 lg:mt-6">
                         <img src={logo} alt="logo" className="text-[#FC6C04] h-8 w-8" />
                         <h1 className="text-white text-lg font-semibold ml-2">Elladin AI</h1>
                     </div>
