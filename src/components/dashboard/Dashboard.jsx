@@ -98,11 +98,11 @@ const Dashboard = () => {
                             />
                         </div>
                         <div className='flex items-center mt-4 md:mt-0'>
-                            <Link to='/upload-ebook' className='text-white hover:underline mr-4 md:mr-6 flex text-sm items-center border-2 border-dashed border-custom-grayli p-2 md:p-3 rounded-xl'>
+                            <Link to='/upload-ebook' className='text-white hover:underline lg:mr-4 mr-1 md:mr-6 flex text-sm items-center border-2 border-dashed border-custom-grayli lg:p-2 p-1 md:p-3 rounded-xl'>
                                 <IoCloudUploadOutline className='mr-1 h-4 w-4' /> Upload E-Book
                             </Link>
-                            <Link to='/new-ebook' className='bg-custom-orange p-2 md:p-3 rounded-xl text-white flex items-center'>
-                                New E-Book <LuPenSquare className='ml-2' />
+                            <Link to='/new-ebook' className='bg-custom-orange lg:p-2 p-1 md:p-3 rounded-xl text-white flex items-center'>
+                                New E-Book <LuPenSquare className='lg:ml-2 ml-1' />
                             </Link>
                         </div>
                     </div>
@@ -115,7 +115,7 @@ const Dashboard = () => {
                             {recentActivity.map((activity, index) => (
                                 <div
                                     key={index}
-                                    className="relative w-full md:w-[233px] h-[182px] bg-[#2C3036] p-2 rounded-xl text-white border border-[#454545] sm:overflow-hidden"
+                                    className="relative w-full md:w-[233px] h-[182px] bg-[#2C3036] p-2 rounded-xl text-white border border-[#454545] sm:overflow-hidden md:overflow-hidden"
                                 >
                                     <div className="absolute top-6 right-2">
                                         <FaEllipsisH className="text-white" />
