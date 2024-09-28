@@ -24,25 +24,22 @@ const Menu = () => {
 
     const handleLinkClick = (path) => {
         setActiveLink(path);
-        setIsMenuOpen(false); // Close the menu after clicking a link
+        setIsMenuOpen(false);
     };
 
     return (
         <>
-            {/* Menu button for small screens */}
             <button
-                className="lg:hidden fixed top-4 left-4 z-50 bg-custom-orange p-2  rounded-full shadow-lg"
+                className="lg:hidden fixed top-4 left-4 z-50 bg-custom-orange p-2 rounded-full shadow-lg"
                 onClick={toggleMenu}
             >
                 <HiMenuAlt2 className="text-white text-2xl" />
             </button>
 
-            {/* Sidebar menu */}
             <div
-                className={`fixed top-0 left-0 h-screen lg:h-full z-40 w-[80%] max-w-xs bg-[#3A3E44] p-4 flex flex-col justify-between 
-        transition-transform transform ${isMenuOpen ? 'translate-x-0' : '-translate-x-full'} lg:translate-x-0 lg:relative lg:w-1/5 rounded-s-3xl overflow-y-auto`}
+                className={`fixed top-0 left-0 h-screen lg:h-full z-40 w-[50%] max-w-xs bg-[#3A3E44] p-4 flex flex-col justify-between 
+                transition-transform transform ${isMenuOpen ? 'translate-x-0' : '-translate-x-full'} lg:translate-x-0 lg:relative lg:w-1/5 rounded-s-3xl overflow-y-auto`}
             >
-                {/* Background patterns */}
                 <img
                     src={pattern1}
                     alt="Top left pattern"
@@ -59,7 +56,6 @@ const Menu = () => {
                     className="absolute bottom-0 left-0 w-[100px] h-[100px] opacity-70"
                 />
 
-                {/* Menu content */}
                 <div className="flex flex-col items-start">
                     <div className="flex items-center justify-start mb-6 mt-16 lg:mt-6">
                         <img src={logo} alt="logo" className="text-[#FC6C04] h-8 w-8" />
@@ -126,7 +122,6 @@ const Menu = () => {
                     </div>
                 </div>
 
-                {/* Unlock Premium Section */}
                 <div className="relative mt-28 mb-2 p-3 bg-white rounded-xl text-center w-full h-48">
                     <div className="absolute top-[-30px] left-1/2 transform -translate-x-1/2">
                         <div className="w-[60px] h-[60px] bg-white rounded-full flex items-center justify-center border-2 border-[#FC6C04]">
