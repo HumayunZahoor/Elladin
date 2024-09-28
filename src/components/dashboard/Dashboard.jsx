@@ -8,12 +8,15 @@ import { TbSettings2 } from "react-icons/tb";
 import recentActivityData from './recentActivityData.json';
 import { Link } from 'react-router-dom';
 import { FaSun, FaCloudSun, FaMoon } from 'react-icons/fa';
+import Audience from './Audience'; 
+import BookTopic from './BookTopic'; // Import the BookTopic component
 
 const Dashboard = () => {
     const [recentActivity, setRecentActivity] = useState([]);
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
     const [greeting, setGreeting] = useState('');
     const [greetingIcon, setGreetingIcon] = useState(null);
+    const [popupStep, setPopupStep] = useState(null); // State for popup step
 
     const getGreeting = () => {
         const now = new Date();
@@ -52,6 +55,17 @@ const Dashboard = () => {
         setIsDropdownOpen(!isDropdownOpen);
     };
 
+    const handleOpenPopup = () => {
+        setPopupStep('audience'); // Show Audience popup
+    };
+
+    const handleClosePopup = () => {
+        setPopupStep(null); // Close all popups
+    };
+
+    const handleNextPopup = () => {
+        setPopupStep('bookTopic'); // Switch to BookTopic popup
+    };
     return (
         <div className='w-full h-full min-h-screen bg-custom-gray flex'>
             <Menu />
@@ -98,9 +112,11 @@ const Dashboard = () => {
                             />
                         </div>
                         <div className='flex items-center mt-4 md:mt-0'>
-                            <Link to='/upload-ebook' className='text-white hover:underline lg:mr-4 mr-1 md:mr-6 flex text-sm items-center border-2 border-dashed border-custom-grayli lg:p-3 p-1 md:p-3 rounded-xl'>
+                            <button
+                                onClick={handleOpenPopup}  
+                                className='text-white hover:underline lg:mr-4 mr-1 md:mr-6 flex text-sm items-center border-2 border-dashed border-custom-grayli lg:p-3 p-1 md:p-3 rounded-xl'>
                                 <IoCloudUploadOutline className='mr-1 h-4 w-4' /> Upload E-Book
-                            </Link>
+                            </button>
                             <Link to='/new-ebook' className='bg-custom-orange lg:p-3 p-1 md:p-3 rounded-xl text-white flex items-center'>
                                 New E-Book <LuPenSquare className='lg:ml-2 ml-1' />
                             </Link>
@@ -136,6 +152,13 @@ const Dashboard = () => {
                     </div>
                 </div>
             </div>
+            {/* Render the popup conditionally */}
+            {popupStep === 'audience' && (
+                <Audience onClose={handleClosePopup} onNext={handleNextPopup} /> // Pass handleNextPopup to Audience
+            )}
+            {popupStep === 'bookTopic' && (
+                <BookTopic onClose={handleClosePopup} /> // Render BookTopic popup when next is clicked
+            )}
         </div>
     );
 };
