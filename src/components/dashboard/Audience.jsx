@@ -65,15 +65,15 @@ const Audience = ({ onClose, onNext }) => {
                 </div>
                 
                 {/* Buttons section, aligned to the right */}
-                <div className="flex justify-end w-full mt-8">
+                <div className="flex justify-end w-full mt-8 ">
                     <button
-                        className="bg-white text-[#2F3236] rounded-xl py-2 px-8 mr-4"
+                        className="bg-white text-[#2F3236] rounded-xl lg:py-2 lg:px-8 py-1 px-4 lg:mr-4 mr-2"
                         onClick={onClose}
                     >
                         Cancel
                     </button>
                     <button 
-                        className="bg-custom-orange text-white rounded-xl py-2 px-8"
+                        className="bg-custom-orange text-white rounded-xl lg:py-2 lg:px-8 py-1 px-4"
                         onClick={onNext} 
                         >
                         Next
