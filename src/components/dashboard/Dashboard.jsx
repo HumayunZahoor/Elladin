@@ -59,7 +59,7 @@ const Dashboard = () => {
                 <div className='flex justify-between items-center lg:mt-4 mt-12 ml-4 md:ml-16 mr-4'>
                     <h1 className='font-rubik text-xl md:text-2xl font-medium leading-9 text-left text-white'>Dashboard</h1>
                     <div className='relative'>
-                        <div className='flex items-center cursor-pointer mr-4 md:mr-8' onClick={toggleDropdown}>
+                        <div className='flex items-center cursor-pointer lg:mr-4 md:mr-8' onClick={toggleDropdown}>
                             <div className='w-8 h-8 md:w-10 md:h-10 bg-white rounded-full flex items-center justify-center'>
                                 <TbSettings2 className='w-4 h-4 text-custom-orange' />
                             </div>
@@ -106,7 +106,7 @@ const Dashboard = () => {
                             </Link>
                         </div>
                     </div>
-                    <div className='mt-6 md:mt-14 bg-[#2F3236] p-4 rounded-xl border border-[#575757]'>
+                    <div className='mt-6 md:mt-14 bg-[#2F3236] lg:p-4  rounded-xl border border-[#575757]'>
                         <div className='flex justify-between items-center mb-6 mt-6'>
                             <h2 className='text-white text-lg md:text-xl'>Recent Activity</h2>
                             <button className='text-white hover:underline'>See All</button>
@@ -115,7 +115,7 @@ const Dashboard = () => {
                             {recentActivity.map((activity, index) => (
                                 <div
                                     key={index}
-                                    className="relative w-full md:w-[233px] h-[182px] bg-[#2C3036] p-2 rounded-xl text-white border border-[#454545]"
+                                    className="relative w-full md:w-[233px] h-[182px] bg-[#2C3036] p-2 rounded-xl text-white border border-[#454545] sm:overflow-hidden"
                                 >
                                     <div className="absolute top-6 right-2">
                                         <FaEllipsisH className="text-white" />
