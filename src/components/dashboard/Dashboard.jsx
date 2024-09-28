@@ -124,10 +124,10 @@ const Dashboard = () => {
                                         <div className="bg-[#FF6600] w-12 h-10 rounded-2xl"></div>
                                         <div className="absolute left-2 bottom-0 w-8 h-8 bg-white rounded-t-lg rounded-b-md"></div>
                                     </div>
-                                    <h3 className="font-rubik text-lg font-medium text-left ml-4 mt-4">
+                                    <h3 className="font-rubik lg:text-lg lg:font-medium text-left lg:ml-4 ml-1 lg:mt-4 mt-2">
                                         {activity.title}
                                     </h3>
-                                    <p className="font-rubik text-[#A0A0A0] text-sm font-normal leading-[19.6px] text-left ml-4">
+                                    <p className="font-rubik text-[#A0A0A0] text-sm font-normal leading-[19.6px] text-left lg:ml-4 ml-1">
                                         {activity.category} • {activity.pages} Pages
                                     </p>
                                 </div>
