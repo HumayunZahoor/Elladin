@@ -77,10 +77,10 @@ const Dashboard = () => {
                         </div>
                         {isDropdownOpen && (
                             <div className='absolute right-0 mt-2 w-36 md:w-44 bg-gray-700 rounded-md shadow-lg'>
-                                <Link to="/profile" className='flex items-center p-1 text-white hover:bg-gray-600'>
+                                <Link to="/profile" className='flex items-center p-1 lg:text-base text-sm text-white hover:bg-gray-600'>
                                     <FaUser className='mr-2' /> My Profile
                                 </Link>
-                                <Link to="/Dashboard" className='flex items-center p-1 text-white hover:bg-gray-600'>
+                                <Link to="/Dashboard" className='flex items-center p-1 lg:text-base text-sm text-white hover:bg-gray-600'>
                                     <FaSignOutAlt className='mr-2' /> Logout
                                 </Link>
                             </div>
