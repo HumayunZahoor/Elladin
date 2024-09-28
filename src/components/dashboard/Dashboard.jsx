@@ -59,7 +59,7 @@ const Dashboard = () => {
                 <div className='flex justify-between items-center lg:mt-4 mt-12 ml-4 md:ml-16 mr-4'>
                     <h1 className='font-rubik text-xl md:text-2xl font-medium leading-9 text-left text-white'>Dashboard</h1>
                     <div className='relative'>
-                        <div className='flex items-center cursor-pointer lg:mr-4 mr-3 md:mr-8' onClick={toggleDropdown}>
+                        <div className='flex items-center cursor-pointer lg:mr-4 mr-1 md:mr-8' onClick={toggleDropdown}>
                             <div className='w-6 h-6 md:w-10 md:h-10 bg-white rounded-full flex items-center justify-center'>
                                 <TbSettings2 className='lg:w-4 lg:h-4 w-3 h-3 text-custom-orange' />
                             </div>
