@@ -89,7 +89,7 @@ const Dashboard = () => {
                 </div>
                 <div className='bg-custom-gray rounded-lg p-4 md:p-6 m-4'>
                     <div className='flex flex-col md:flex-row justify-between items-center mb-4'>
-                        <div className='flex items-center relative w-full md:w-auto'>
+                        <div className='flex items-center relative w-full md:w-auto lg:mt-0 mt-12'>
                             <FaSearch className='absolute left-3 top-1/2 transform -translate-y-1/2 text-white text-sm h-4 w-4' />
                             <input 
                                 type='text' 
