@@ -59,19 +59,19 @@ const Dashboard = () => {
                 <div className='flex justify-between items-center lg:mt-4 mt-12 ml-4 md:ml-16 mr-4'>
                     <h1 className='font-rubik text-xl md:text-2xl font-medium leading-9 text-left text-white'>Dashboard</h1>
                     <div className='relative'>
-                        <div className='flex items-center cursor-pointer lg:mr-4 md:mr-8' onClick={toggleDropdown}>
-                            <div className='w-8 h-8 md:w-10 md:h-10 bg-white rounded-full flex items-center justify-center'>
-                                <TbSettings2 className='w-4 h-4 text-custom-orange' />
+                        <div className='flex items-center cursor-pointer lg:mr-4 mr-3 md:mr-8' onClick={toggleDropdown}>
+                            <div className='w-6 h-6 md:w-10 md:h-10 bg-white rounded-full flex items-center justify-center'>
+                                <TbSettings2 className='lg:w-4 lg:h-4 w-3 h-3 text-custom-orange' />
                             </div>
-                            <div className='w-8 h-8 md:w-10 md:h-10 bg-custom-orange rounded-full ml-2 md:ml-4'></div>
+                            <div className='w-6 h-6 md:w-10 md:h-10 bg-custom-orange rounded-full ml-1 md:ml-4'></div>
                             <div className='ml-2 md:ml-4 text-white flex flex-col'>
                                 <div className='flex items-center'>
                                     <span className='text-custom-orange text-xs'>{greetingIcon}</span>
                                     <span className='text-xs text-custom-orange'>{greeting}</span>
                                 </div>
                                 <div className='flex items-center'>
-                                    <span className='text-white font-rubik text-lg font-bold'>William Pena</span>
-                                    <RiArrowDropDownLine className='ml-1 text-2xl text-white' />
+                                    <span className='text-white font-rubik lg:text-lg text-sm lg:font-bold font-semibold'>William Pena</span>
+                                    <RiArrowDropDownLine className='ml-1 text-3xl text-white' />
                                 </div>
                             </div>
                         </div>
@@ -122,7 +122,7 @@ const Dashboard = () => {
                                     </div>
                                     <div className="relative m-4">
                                         <div className="bg-[#FF6600] w-12 h-10 rounded-2xl"></div>
-                                        <div className="absolute left-2 bottom-0 w-9 h-8 bg-white rounded-t-lg rounded-b-md"></div>
+                                        <div className="absolute left-2 bottom-0 w-8 h-8 bg-white rounded-t-lg rounded-b-md"></div>
                                     </div>
                                     <h3 className="font-rubik text-lg font-medium text-left ml-4 mt-4">
                                         {activity.title}
