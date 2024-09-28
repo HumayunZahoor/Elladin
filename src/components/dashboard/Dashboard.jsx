@@ -106,7 +106,7 @@ const Dashboard = () => {
                             </Link>
                         </div>
                     </div>
-                    <div className='mt-6 md:mt-14 bg-[#2F3236] lg:p-4  rounded-xl border border-[#575757]'>
+                    <div className='mt-6 md:mt-14 bg-[#2F3236] lg:p-4 p-1 rounded-xl border border-[#575757]'>
                         <div className='flex justify-between items-center mb-6 mt-6'>
                             <h2 className='text-white text-lg md:text-xl'>Recent Activity</h2>
                             <button className='text-white hover:underline'>See All</button>
