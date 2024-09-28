@@ -39,8 +39,8 @@ const Menu = () => {
 
             {/* Sidebar menu */}
             <div
-                className={`fixed top-0 left-0 h-full z-40 w-[80%] max-w-xs bg-[#3A3E44] p-4 flex flex-col justify-between 
-                    transition-transform transform ${isMenuOpen ? 'translate-x-0' : '-translate-x-full'} lg:translate-x-0 lg:relative lg:w-1/5 rounded-s-3xl`}
+                className={`fixed top-0 left-0 h-screen lg:h-full z-40 w-[80%] max-w-xs bg-[#3A3E44] p-4 flex flex-col justify-between 
+        transition-transform transform ${isMenuOpen ? 'translate-x-0' : '-translate-x-full'} lg:translate-x-0 lg:relative lg:w-1/5 rounded-s-3xl overflow-y-auto`}
             >
                 {/* Background patterns */}
                 <img
