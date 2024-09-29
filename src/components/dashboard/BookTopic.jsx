@@ -28,10 +28,10 @@ const BookTopic = ({ onClose, onNext, onBack }) => {
                 <h4 className="text-custom-orange text-sm font-bold text-left mb-4">Topic or Niche</h4>
                 
                 {/* Input for adding audiences */}
-                <div className="w-full flex flex-wrap items-center bg-[#292C30] border border-[#575757] rounded-xl p-2 mb-6">
+                <div className="lg:w-full w-[90%] flex flex-wrap items-center bg-[#292C30] border border-[#575757] rounded-xl p-2 mb-6">
                    
                     <input
-                        className="bg-[#292C30] outline-none text-white ml-2 mr-2 overflow-hidden flex-grow"
+                        className="bg-[#292C30] outline-none text-white ml-2 mr-2 overflow-hiddenz flex-grow"
                         type="text"
                         placeholder="Entrepreneurship"
                        
