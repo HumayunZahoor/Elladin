@@ -36,9 +36,9 @@ const BookTitle = ({ onClose, onBack }) => {
                 <h4 className="text-custom-orange text-sm font-bold text-left mb-4">Book Title</h4>
                 
                 {/* Input for adding book title */}
-                <div className="lg:w-full w-[90%] flex flex-wrap items-center bg-[#292C30] border border-[#575757] rounded-xl p-2 mb-5">
+                <div className="w-full flex flex-wrap items-center bg-[#292C30] border border-[#575757] rounded-xl p-2 mb-5">
                     <input
-                        className="bg-custom-gray outline-none text-base text-white ml-2 mr-2 overflow-hidden flex-grow"
+                        className="bg-[#292C30] outline-none text-white ml-2 mr-2 w-full max-w-xs"
                         type="text"
                         placeholder="Type Here"
                         value={bookTitle}
