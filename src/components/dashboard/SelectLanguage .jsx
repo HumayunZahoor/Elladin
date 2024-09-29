@@ -29,7 +29,7 @@ const SelectLanguage = ({ onClose, onNext, onBack }) => {
                 <h4 className="text-custom-orange text-sm font-bold text-left mb-4">Language</h4>
                 
                 {/* Input for selecting language */}
-                <div className="lg:w-[50%] w-[80%] flex items-center bg-[#393C42] border border-[#575757] rounded-3xl p-2 mb-6">
+                <div className="lg:w-[50%] w-[95%] flex items-center bg-[#393C42] border border-[#575757] rounded-3xl p-2 mb-6">
                     <select
                         className="bg-[#393C42] rounded-full text-white outline-none flex-grow p-2 transition-colors"
                         value={selectedLanguage}
