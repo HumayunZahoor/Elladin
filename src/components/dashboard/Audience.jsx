@@ -42,9 +42,9 @@ const Audience = ({ onClose, onNext }) => {
                 <h4 className="text-custom-orange text-sm font-bold text-left mb-4">Audience of your book</h4>
                 
                 {/* Input for adding audiences */}
-                <div className="lg:w-full w-[95%] flex flex-wrap items-center bg-[#292C30] border border-[#575757] rounded-xl p-2 mb-6">
+                <div className="lg:w-full w-[90%] flex flex-wrap items-center overflow-hidden bg-[#292C30] border border-[#575757] rounded-xl p-2 mb-6">
                     {audiences.map((audience, index) => (
-                        <div key={index} className="flex items-center lg:w-full w-[95%] bg-custom-orange text-white rounded-full px-3 py-1 m-1">
+                        <div key={index} className="flex items-center bg-custom-orange text-white rounded-full px-3 py-1 m-1">
                             <span>{audience}</span>
                             <button
                                 className="ml-2 text-white"
@@ -55,7 +55,7 @@ const Audience = ({ onClose, onNext }) => {
                         </div>
                     ))}
                     <input
-                        className="bg-[#292C30] outline-none text-white ml-2 flex-grow"
+                        className="bg-[#292C30] outline-none text-white ml-2 mr-2 overflow-hidden flex-grow"
                         type="text"
                         placeholder="business owners"
                         value={inputValue}
