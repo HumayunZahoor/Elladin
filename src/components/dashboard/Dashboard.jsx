@@ -9,7 +9,9 @@ import recentActivityData from './recentActivityData.json';
 import { Link } from 'react-router-dom';
 import { FaSun, FaCloudSun, FaMoon } from 'react-icons/fa';
 import Audience from './Audience'; 
-import BookTopic from './BookTopic'; // Import the BookTopic component
+import BookTopic from './BookTopic'; 
+import SelectLanguage from './SelectLanguage ';
+import BookTitle from './BookTitle';
 
 const Dashboard = () => {
     const [recentActivity, setRecentActivity] = useState([]);
@@ -63,9 +65,42 @@ const Dashboard = () => {
         setPopupStep(null); // Close all popups
     };
 
-    const handleNextPopup = () => {
-        setPopupStep('bookTopic'); // Switch to BookTopic popup
+    const handleNextPopup = (currentStep) => {
+        switch (currentStep) {
+            case 'audience':
+                setPopupStep('bookTopic');
+                break;
+            case 'bookTopic':
+                setPopupStep('selectLanguage');
+                break;
+            case 'selectLanguage':
+                setPopupStep('bookTitle');
+                break;
+            case 'bookTitle':
+                setPopupStep(null); // End of the popup steps, close popup
+                break;
+            default:
+                setPopupStep(null);
+        }
     };
+
+    const handleBackPopup = (currentStep) => {
+        switch (currentStep) {
+            case 'bookTopic':
+                setPopupStep('audience');
+                break;
+            case 'selectLanguage':
+                setPopupStep('bookTopic');
+                break;
+            case 'bookTitle':
+                setPopupStep('selectLanguage');
+                break;
+            default:
+                setPopupStep(null);
+        }
+    };
+
+
     return (
         <div className='w-full h-full min-h-screen bg-custom-gray flex'>
             <Menu />
@@ -152,13 +187,35 @@ const Dashboard = () => {
                     </div>
                 </div>
             </div>
-            {/* Render the popup conditionally */}
-            {popupStep === 'audience' && (
-                <Audience onClose={handleClosePopup} onNext={handleNextPopup} /> // Pass handleNextPopup to Audience
-            )}
-            {popupStep === 'bookTopic' && (
-                <BookTopic onClose={handleClosePopup} /> // Render BookTopic popup when next is clicked
-            )}
+            {/* Render the popups conditionally */}
+{popupStep === 'audience' && (
+    <Audience 
+        onClose={handleClosePopup} 
+        onNext={() => handleNextPopup('audience')} 
+    />
+)}
+{popupStep === 'bookTopic' && (
+    <BookTopic 
+        onClose={handleClosePopup} 
+        onNext={() => handleNextPopup('bookTopic')} 
+        onBack={() => handleBackPopup('bookTopic')} 
+    />
+)}
+{popupStep === 'selectLanguage' && (
+    <SelectLanguage 
+        onClose={handleClosePopup} 
+        onNext={() => handleNextPopup('selectLanguage')} 
+        onBack={() => handleBackPopup('selectLanguage')} 
+    />
+)}
+{popupStep === 'bookTitle' && (
+    <BookTitle 
+        onClose={handleClosePopup} 
+        onNext={() => handleNextPopup('bookTitle')} 
+        onBack={() => handleBackPopup('bookTitle')} 
+    />
+)}
+
         </div>
     );
 };

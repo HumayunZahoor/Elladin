@@ -37,12 +37,12 @@ const Audience = ({ onClose, onNext }) => {
                 </div>
                 
                 {/* Form section with headings and input */}
-                <h4 className="text-custom-grayli text-sm font-bold text-left mb-4">Tell me about your book</h4>
-                <h2 className="text-white text-base mb-8 text-left">Who is the intended audience for your book?</h2>
+                <h4 className="text-custom-grayli text-sm font-bold text-left mb-4">Tell me about book</h4>
+                <h2 className="text-white text-base font-bold mb-8 text-left">Who is the intended audience for your book?</h2>
                 <h4 className="text-custom-orange text-sm font-bold text-left mb-4">Audience of your book</h4>
                 
                 {/* Input for adding audiences */}
-                <div className="w-full flex flex-wrap items-center bg-[#44494F] border border-[#575757] rounded-xl p-2 mb-6">
+                <div className="w-full flex flex-wrap items-center bg-[#292C30] border border-[#575757] rounded-xl p-2 mb-6">
                     {audiences.map((audience, index) => (
                         <div key={index} className="flex items-center bg-custom-orange text-white rounded-full px-3 py-1 m-1">
                             <span>{audience}</span>
@@ -55,7 +55,7 @@ const Audience = ({ onClose, onNext }) => {
                         </div>
                     ))}
                     <input
-                        className="bg-transparent outline-none text-white ml-2 flex-grow"
+                        className="bg-[#292C30] outline-none text-white ml-2 flex-grow"
                         type="text"
                         placeholder="business owners"
                         value={inputValue}

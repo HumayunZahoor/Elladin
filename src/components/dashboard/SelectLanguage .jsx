@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import logo from '../images/mgl.png';
 
-const BookTopic = ({ onClose, onNext, onBack }) => { 
+const SelectLanguage = ({ onClose, onNext, onBack }) => {
+    const [selectedLanguage, setSelectedLanguage] = useState('');
 
     return (
         <div className="fixed inset-0 flex items-center justify-center z-50">
@@ -24,32 +25,38 @@ const BookTopic = ({ onClose, onNext, onBack }) => {
                 
                 {/* Form section with headings and input */}
                 <h4 className="text-custom-grayli text-sm font-bold text-left mb-4">Tell me about book</h4>
-                <h2 className="text-white text-base font-bold mb-8 text-left">Enter your topic or niche</h2>
-                <h4 className="text-custom-orange text-sm font-bold text-left mb-4">Topic or Niche</h4>
+                <h2 className="text-white text-base font-bold mb-8 text-left">Please select your book language</h2>
+                <h4 className="text-custom-orange text-sm font-bold text-left mb-4">Language</h4>
                 
-                {/* Input for adding audiences */}
-                <div className="w-full flex flex-wrap items-center bg-[#292C30] border border-[#575757] rounded-xl p-2 mb-6">
-                   
-                    <input
-                        className="bg-[#292C30] outline-none text-white ml-2 flex-grow"
-                        type="text"
-                        placeholder="Entrepreneurship"
-                       
-                    />
+                {/* Input for selecting language */}
+                <div className="lg:w-[50%] w-[80%] flex items-center bg-[#393C42] border border-[#575757] rounded-3xl p-2 mb-6">
+                    <select
+                        className="bg-[#393C42] rounded-full text-white outline-none flex-grow p-2 transition-colors"
+                        value={selectedLanguage}
+                        onChange={(e) => setSelectedLanguage(e.target.value)}
+                    >
+                        <option value="">Select a language</option>
+                        <option value="Spanish">Spanish</option>
+<option value="French">French</option>
+<option value="German">German</option>
+<option value="Japanese">Japanese</option>
+<option value="Portuguese">Portuguese</option>
+
+                    </select>
                 </div>
                 
                 {/* Buttons section, aligned to the right */}
-                <div className="flex justify-end w-full mt-8 ">
+                <div className="flex justify-end w-full mt-8">
                     <button
                         className="bg-white text-[#2F3236] rounded-xl lg:py-2 lg:px-8 py-1 px-4 lg:mr-4 mr-2"
-                        onClick={onBack} 
+                        onClick={onBack}
                     >
                         Back
                     </button>
                     <button 
                         className="bg-custom-orange text-white rounded-xl lg:py-2 lg:px-8 py-1 px-4"
-                        onClick={onNext} 
-                        >
+                        onClick={onNext}
+                    >
                         Next
                     </button>
                 </div>
@@ -58,4 +65,4 @@ const BookTopic = ({ onClose, onNext, onBack }) => {
     );
 };
 
-export default BookTopic;
+export default SelectLanguage;
