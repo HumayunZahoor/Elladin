@@ -38,7 +38,7 @@ const BookTitle = ({ onClose, onBack }) => {
                 {/* Input for adding book title */}
                 <div className="w-full flex flex-wrap items-center bg-[#292C30] border border-[#575757] rounded-xl p-2 mb-5">
                     <input
-                        className="bg-custom-gray outline-none text-base text-white ml-2 flex-grow"
+                        className="bg-custom-gray outline-none text-base text-white ml-2 mr-2 overflow-hidden flex-grow"
                         type="text"
                         placeholder="Type Here"
                         value={bookTitle}
@@ -49,21 +49,21 @@ const BookTitle = ({ onClose, onBack }) => {
     
                 <div className="flex items-center mb-1">
                     <input type="checkbox" id="option1" className="custom-checkbox mr-2" />
-                    <p className="text-sm font-medium text-white">Entrepreneur Success 2024</p>
+                    <p className="lg:text-sm text-xs font-medium text-white">Entrepreneur Success 2024</p>
                 </div>
             
                 <div className="flex items-center mb-1">
                     <input type="checkbox" id="option2" className="custom-checkbox mr-2" />
-                    <p className="text-sm font-medium text-white">Winning Strategies for Entrepreneurs in 2024</p>
+                    <p className="lg:text-sm text-xs font-medium text-white">Winning Strategies for Entrepreneurs in 2024</p>
                 </div>
             
                 <div className="flex items-center mb-1">
                     <input type="checkbox" id="option3" className="custom-checkbox mr-2" />
-                    <p className="text-sm font-medium text-white">Mastering Success in 2024 and Beyond</p>
+                    <p className="lg:text-sm text-xs font-medium text-white">Mastering Success in 2024 and Beyond</p>
                 </div>
                 
                 {/* Buttons section, aligned to the right */}
-                <div className="flex justify-end w-full mt-6 lg:mb-0 mb-2">
+                <div className="flex justify-end w-full lg:mt-6 mt-2 lg:mb-0 mb-1">
                     <button
                         className="bg-white text-[#2F3236] rounded-xl lg:py-2 lg:px-8 py-1 px-4 lg:mr-4 mr-2"
                         onClick={onBack}
