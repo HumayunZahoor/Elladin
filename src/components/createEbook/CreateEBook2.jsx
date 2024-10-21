@@ -1,15 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { FaUser, FaSignOutAlt, FaSun, FaCloudSun, FaMoon, FaPlus, FaArrowRight, FaFileAlt } from 'react-icons/fa';
+import { FaUser, FaSignOutAlt, FaSun, FaCloudSun, FaMoon, FaPlus, FaArrowRight, FaFileAlt, FaLink  } from 'react-icons/fa';
 import { TbSettings2 } from 'react-icons/tb';
 import { RiArrowDropDownLine } from 'react-icons/ri';
 import { FiFilePlus } from 'react-icons/fi';
+import { HiDownload } from "react-icons/hi";
 import logo from '../images/mgl.png'
 import Menu from '../navigation/Menu';
 import backgroundImage from '../images/bgrnd.jpeg'
 
 
-const CreateEBook = () => {
+const CreateEBook2 = () => {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
     const [greeting, setGreeting] = useState('');
     const [greetingIcon, setGreetingIcon] = useState(null);
@@ -49,7 +50,7 @@ const CreateEBook = () => {
     };
 
     const handleOnClick = () => {
-        navigate('/CreateEBook2');
+        navigate('/Dashboard');
     }
     return (
         <div className='w-full h-full min-h-screen bg-custom-gray flex'>
@@ -118,9 +119,9 @@ const CreateEBook = () => {
                     <div className='flex flex-col mt-16 '>
                         <div
                             style={{ backgroundImage: `url(${backgroundImage})` }}
-                            className="bg-contain bg-center  " // Use Tailwind classes as needed
+                            className="bg-contain bg-center " // Use Tailwind classes as needed
                         >
-                            <div className="flex justify-between items-start bg-custom-gray px-4 py-4 rounded-t-xl mx-10 mt-8 border-b-2 border-custom-grayli ">
+                            <div className="flex justify-between items-start bg-custom-gray px-4 py-4 rounded-t-xl mx-10 mt-8 border-b-2 border-custom-grayli">
                                 {/* First div */}
                                 <div className="relative lg:mt-4">
                                     <div className="bg-[#FF6600] w-12 h-10 rounded-2xl"></div>
@@ -131,8 +132,14 @@ const CreateEBook = () => {
                                     <h2 className="text-lg text-white">Entrepreneur Success 2024</h2>
                                     <p className="text-custom-grayli text-sm">Topic: Entrepreneurships</p>
                                 </div>
-                                <button className="flex items-center justify-center mt-3 text-white rounded-xl p-2 bg-custom-orange lg:ml-60">
-                                    Create E-Book <FiFilePlus className='ml-2' />
+                                <button className="flex items-center justify-center mt-3 text-white rounded-xl p-2 bg-white lg:ml-60 mr-0">
+                                    <HiDownload className='text-black' />
+                                </button>
+                                <button className="flex items-center justify-center mt-3 text-white rounded-xl p-2 bg-black mr-0">
+                                    <FaLink />
+                                </button>
+                                <button className="flex items-center justify-center mt-3 text-white rounded-3xl px-2 py-1 bg-custom-orange ">
+                                    Next <FaArrowRight className='ml-2'/>
                                 </button>
                             </div>
                         </div>
@@ -232,4 +239,4 @@ const CreateEBook = () => {
     );
 };
 
-export default CreateEBook;
+export default CreateEBook2;

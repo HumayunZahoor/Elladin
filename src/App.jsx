@@ -12,6 +12,7 @@ import CoverTemplates from "./components/covertemplates/CoverTemplates";
 import Payments from "./components/payments/Payments";
 import HelpSupport from "./components/help&support/HelpSupport";
 import CreateEBook from "./components/createEbook/CreateEBook";
+import CreateEBook2 from "./components/createEbook/CreateEBook2";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './index.css';
@@ -35,6 +36,7 @@ function App() {
       <Route path="/Api" exact element={<Api/>} />
       <Route path="/HelpSupport" exact element={<HelpSupport/>} />
       <Route path="/CreateEBook" exact element={<CreateEBook/>} />
+      <Route path="/CreateEBook2" exact element={<CreateEBook2/>} />
       </Routes>
       <ToastContainer 
         position="top-right"
